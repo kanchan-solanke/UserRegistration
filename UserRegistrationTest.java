@@ -25,9 +25,9 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void givenPasswordconditionmeetthenTrue(){
+    public void givenPassword1conditionmeetthenTrue(){
         UserRegistrationCase userRegistration = new UserRegistrationCase();
-        boolean result = userRegistration.validatePassword("Abc45ut3");
+        boolean result = userRegistration.validatePasswordatleastoneUpperCase("Aber345o");
         Assert.assertEquals(true,result);
     }
 }

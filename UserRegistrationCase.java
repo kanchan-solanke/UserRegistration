@@ -31,4 +31,11 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches("^[a-zA-Z0-9]{8,}$", str);
         return check;
     }
+
+    public boolean validatePasswordatleastoneUpperCase(String str){
+        boolean check = Pattern.matches("^[A-Z]{1}[A-Za-z0-9]{7,}$",str);
+        return check;
+    }
+
+
 }
