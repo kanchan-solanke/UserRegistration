@@ -3,12 +3,18 @@ import org.example.UserRegistrationCase;
 import static org.junit.Assert.assertTrue;
 import org.junit.Assert;
 import org.junit.Test;
-public class UserRegistrationTest
-{
+public class UserRegistrationTest {
     @Test
-    public void givenfirstnameshouldbeTrue(){
+    public void givenfirstnameshouldbeTrue() {
         UserRegistrationCase userRegistration = new UserRegistrationCase();
-        boolean result = userRegistration.validateFirstName( "Kanchan");
-        Assert.assertEquals(true,result);
+        boolean result = userRegistration.validateFirstName("Kanchan");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenLastnameshouldbeTrue() {
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validateLastName("Solanke");
+        Assert.assertEquals(true, result);
     }
 }
