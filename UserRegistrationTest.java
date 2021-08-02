@@ -22,6 +22,12 @@ public class UserRegistrationTest {
     UserRegistrationCase userRegistration = new UserRegistrationCase();
     boolean result = userRegistration.validateMobileNumber("91 9919819801");
     Assert.assertEquals(true, result);
+    }
 
-}
+    @Test
+    public void givenPasswordconditionmeetthenTrue(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validatePassword("Abc45ut3");
+        Assert.assertEquals(true,result);
+    }
 }
