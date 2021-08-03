@@ -42,4 +42,10 @@ public class UserRegistrationTest {
         boolean result = userRegistration.validatePasswordatleastonespecialChar("A8@aaaao");
         Assert.assertEquals(true,result);
     }
+@Test
+    public void validateforemail(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validateforemail("abc.xyz@bl.co.in");
+        Assert.assertEquals(true,result);
+}
 }

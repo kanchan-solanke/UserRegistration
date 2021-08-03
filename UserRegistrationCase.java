@@ -1,5 +1,6 @@
 package org.example;
-import java.util.regex.Matcher;
+import com.sun.xml.internal.ws.api.model.ExceptionType;
+
 import java.util.regex.Pattern;
 public class UserRegistrationCase {
 
@@ -47,5 +48,10 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches( "^(.*[A-Z]{1,}.*[0-9]{1,}.*[~!@#$%^&*]?[A-Za-z0-9]{5,})$",str);
         return check;
     }
-
+// for email validation
+public boolean validateforemail(String str){
+        boolean check = Pattern.matches("^[a-zA-Z0-9.+_-]+[@][a-zA-Z0-9]+[.]co(m|.in)$", str);
+return  check;
 }
+}
+
